@@ -3,7 +3,7 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_VERSION	5.8	//
 A	ping/bsdping.c	93;"	d	file:
 ADDR	debug/backlog.c	4;"	d	file:
 ADDR	debug/qlen.c	4;"	d	file:
@@ -49,14 +49,15 @@ CONTROL_LEN	advio/old/recvfromflags.c	12;"	d	file:
 CONTROL_LEN	advio/old/test01.c	43;"	d	file:
 CONTROL_LEN	unixdomain/readcred.c	3;"	d	file:
 CONTROL_LEN	unixdomain/tfcred01.c	47;"	d	file:
+CPU_VENDOR_OS	config.h	5;"	d
 CPU_VENDOR_OS	sparc64-unknown-freebsd5.1/config.h	5;"	d
 Calloc	lib/wrapunix.c	/^Calloc(size_t n, size_t size)$/;"	f
-Child	server/child.h	/^} Child;$/;"	t	typeref:struct:__anon2
+Child	server/child.h	/^} Child;$/;"	t	typeref:struct:__anon3
 Close	lib/wrapunix.c	/^Close(int fd)$/;"	f
 Connect	lib/wrapsock.c	/^Connect(int fd, const struct sockaddr *sa, socklen_t salen)$/;"	f
 Connect_timeo	lib/connect_timeo.c	/^Connect_timeo(int fd, const SA *sa, socklen_t salen, int sec)$/;"	f
 DEFDATALEN	ping/bsdping.c	87;"	d	file:
-DG	sigio/dgecho01.c	/^} DG;$/;"	t	typeref:struct:__anon9	file:
+DG	sigio/dgecho01.c	/^} DG;$/;"	t	typeref:struct:__anon8	file:
 DGLEN	udpcliserv/dgcliloop1.c	4;"	d	file:
 DGLEN	udpcliserv/dgcliloop3.c	7;"	d	file:
 DIR_MODE	key/unp.h	199;"	d
@@ -143,70 +144,130 @@ Getpeername	lib/wrapsock.c	/^Getpeername(int fd, struct sockaddr *sa, socklen_t 
 Getsockname	lib/wrapsock.c	/^Getsockname(int fd, struct sockaddr *sa, socklen_t *salenptr)$/;"	f
 Getsockopt	lib/wrapsock.c	/^Getsockopt(int fd, int level, int optname, void *optval, socklen_t *optlenptr)$/;"	f
 Gettimeofday	lib/wrapunix.c	/^Gettimeofday(struct timeval *tv, void *foo)$/;"	f
+HAVE_ADDRINFO_STRUCT	config.h	8;"	d
 HAVE_ADDRINFO_STRUCT	sparc64-unknown-freebsd5.1/config.h	8;"	d
+HAVE_ARPA_INET_H	config.h	11;"	d
 HAVE_ARPA_INET_H	sparc64-unknown-freebsd5.1/config.h	11;"	d
+HAVE_BZERO	config.h	14;"	d
 HAVE_BZERO	sparc64-unknown-freebsd5.1/config.h	14;"	d
+HAVE_ERRNO_H	config.h	26;"	d
 HAVE_ERRNO_H	sparc64-unknown-freebsd5.1/config.h	26;"	d
+HAVE_FCNTL_H	config.h	29;"	d
 HAVE_FCNTL_H	sparc64-unknown-freebsd5.1/config.h	29;"	d
+HAVE_GETADDRINFO	config.h	32;"	d
 HAVE_GETADDRINFO	sparc64-unknown-freebsd5.1/config.h	32;"	d
+HAVE_GETADDRINFO_PROTO	config.h	35;"	d
 HAVE_GETADDRINFO_PROTO	sparc64-unknown-freebsd5.1/config.h	35;"	d
+HAVE_GETHOSTBYNAME2	config.h	38;"	d
 HAVE_GETHOSTBYNAME2	sparc64-unknown-freebsd5.1/config.h	38;"	d
+HAVE_GETHOSTBYNAME_R	config.h	41;"	d
+HAVE_GETHOSTNAME	config.h	44;"	d
 HAVE_GETHOSTNAME	sparc64-unknown-freebsd5.1/config.h	44;"	d
+HAVE_GETHOSTNAME_PROTO	config.h	47;"	d
 HAVE_GETHOSTNAME_PROTO	sparc64-unknown-freebsd5.1/config.h	47;"	d
+HAVE_GETNAMEINFO	config.h	50;"	d
 HAVE_GETNAMEINFO	sparc64-unknown-freebsd5.1/config.h	50;"	d
+HAVE_GETNAMEINFO_PROTO	config.h	53;"	d
 HAVE_GETNAMEINFO_PROTO	sparc64-unknown-freebsd5.1/config.h	53;"	d
+HAVE_GETRUSAGE_PROTO	config.h	56;"	d
 HAVE_GETRUSAGE_PROTO	sparc64-unknown-freebsd5.1/config.h	56;"	d
+HAVE_HSTRERROR	config.h	59;"	d
 HAVE_HSTRERROR	sparc64-unknown-freebsd5.1/config.h	59;"	d
+HAVE_HSTRERROR_PROTO	config.h	62;"	d
 HAVE_HSTRERROR_PROTO	sparc64-unknown-freebsd5.1/config.h	62;"	d
+HAVE_IF_NAMEINDEX_STRUCT	config.h	65;"	d
 HAVE_IF_NAMEINDEX_STRUCT	sparc64-unknown-freebsd5.1/config.h	65;"	d
+HAVE_IF_NAMETOINDEX	config.h	68;"	d
 HAVE_IF_NAMETOINDEX	sparc64-unknown-freebsd5.1/config.h	68;"	d
+HAVE_IF_NAMETOINDEX_PROTO	config.h	71;"	d
 HAVE_IF_NAMETOINDEX_PROTO	sparc64-unknown-freebsd5.1/config.h	71;"	d
+HAVE_INET6_RTH_INIT	config.h	74;"	d
+HAVE_INET_ATON	config.h	77;"	d
 HAVE_INET_ATON	sparc64-unknown-freebsd5.1/config.h	74;"	d
+HAVE_INET_ATON_PROTO	config.h	80;"	d
 HAVE_INET_ATON_PROTO	sparc64-unknown-freebsd5.1/config.h	77;"	d
+HAVE_INET_PTON	config.h	83;"	d
 HAVE_INET_PTON	sparc64-unknown-freebsd5.1/config.h	80;"	d
+HAVE_INET_PTON_PROTO	config.h	86;"	d
 HAVE_INET_PTON_PROTO	sparc64-unknown-freebsd5.1/config.h	83;"	d
 HAVE_KEVENT	sparc64-unknown-freebsd5.1/config.h	86;"	d
 HAVE_KQUEUE	sparc64-unknown-freebsd5.1/config.h	89;"	d
+HAVE_LIBPTHREAD	config.h	98;"	d
+HAVE_MKSTEMP	config.h	110;"	d
 HAVE_MKSTEMP	sparc64-unknown-freebsd5.1/config.h	107;"	d
+HAVE_MSGHDR_MSG_CONTROL	config.h	113;"	d
 HAVE_MSGHDR_MSG_CONTROL	sparc64-unknown-freebsd5.1/config.h	110;"	d
 HAVE_NETCONFIG_H	sparc64-unknown-freebsd5.1/config.h	113;"	d
+HAVE_NETDB_H	config.h	119;"	d
 HAVE_NETDB_H	sparc64-unknown-freebsd5.1/config.h	116;"	d
+HAVE_NETINET_IN_H	config.h	125;"	d
 HAVE_NETINET_IN_H	sparc64-unknown-freebsd5.1/config.h	122;"	d
 HAVE_NET_IF_DL_H	sparc64-unknown-freebsd5.1/config.h	125;"	d
+HAVE_POLL	config.h	131;"	d
 HAVE_POLL	sparc64-unknown-freebsd5.1/config.h	128;"	d
+HAVE_POLL_H	config.h	134;"	d
 HAVE_POLL_H	sparc64-unknown-freebsd5.1/config.h	131;"	d
+HAVE_PSELECT	config.h	137;"	d
 HAVE_PSELECT	sparc64-unknown-freebsd5.1/config.h	134;"	d
+HAVE_PSELECT_PROTO	config.h	140;"	d
 HAVE_PSELECT_PROTO	sparc64-unknown-freebsd5.1/config.h	137;"	d
+HAVE_PTHREAD_H	config.h	143;"	d
 HAVE_PTHREAD_H	sparc64-unknown-freebsd5.1/config.h	140;"	d
+HAVE_SIGNAL_H	config.h	146;"	d
 HAVE_SIGNAL_H	sparc64-unknown-freebsd5.1/config.h	143;"	d
+HAVE_SNPRINTF	config.h	149;"	d
 HAVE_SNPRINTF	sparc64-unknown-freebsd5.1/config.h	146;"	d
+HAVE_SNPRINTF_PROTO	config.h	152;"	d
 HAVE_SNPRINTF_PROTO	sparc64-unknown-freebsd5.1/config.h	149;"	d
 HAVE_SOCKADDR_DL_STRUCT	sparc64-unknown-freebsd5.1/config.h	152;"	d
 HAVE_SOCKADDR_SA_LEN	sparc64-unknown-freebsd5.1/config.h	155;"	d
+HAVE_SOCKATMARK	config.h	161;"	d
 HAVE_SOCKATMARK	sparc64-unknown-freebsd5.1/config.h	158;"	d
+HAVE_SOCKATMARK_PROTO	config.h	164;"	d
 HAVE_SOCKATMARK_PROTO	sparc64-unknown-freebsd5.1/config.h	161;"	d
+HAVE_STDIO_H	config.h	167;"	d
 HAVE_STDIO_H	sparc64-unknown-freebsd5.1/config.h	164;"	d
+HAVE_STDLIB_H	config.h	170;"	d
 HAVE_STDLIB_H	sparc64-unknown-freebsd5.1/config.h	167;"	d
+HAVE_STRINGS_H	config.h	173;"	d
 HAVE_STRINGS_H	sparc64-unknown-freebsd5.1/config.h	170;"	d
+HAVE_STRING_H	config.h	176;"	d
 HAVE_STRING_H	sparc64-unknown-freebsd5.1/config.h	173;"	d
+HAVE_STRUCT_IFREQ_IFR_MTU	config.h	182;"	d
 HAVE_STRUCT_IFREQ_IFR_MTU	sparc64-unknown-freebsd5.1/config.h	179;"	d
+HAVE_STRUCT_SOCKADDR_STORAGE	config.h	185;"	d
 HAVE_STRUCT_SOCKADDR_STORAGE	sparc64-unknown-freebsd5.1/config.h	182;"	d
 HAVE_SYS_EVENT_H	sparc64-unknown-freebsd5.1/config.h	185;"	d
 HAVE_SYS_FILIO_H	sparc64-unknown-freebsd5.1/config.h	188;"	d
+HAVE_SYS_IOCTL_H	config.h	194;"	d
 HAVE_SYS_IOCTL_H	sparc64-unknown-freebsd5.1/config.h	191;"	d
+HAVE_SYS_PARAM_H	config.h	197;"	d
+HAVE_SYS_SELECT_H	config.h	200;"	d
 HAVE_SYS_SELECT_H	sparc64-unknown-freebsd5.1/config.h	194;"	d
+HAVE_SYS_SOCKET_H	config.h	203;"	d
 HAVE_SYS_SOCKET_H	sparc64-unknown-freebsd5.1/config.h	197;"	d
 HAVE_SYS_SOCKIO_H	sparc64-unknown-freebsd5.1/config.h	200;"	d
+HAVE_SYS_STAT_H	config.h	209;"	d
 HAVE_SYS_STAT_H	sparc64-unknown-freebsd5.1/config.h	203;"	d
+HAVE_SYS_SYSCTL_H	config.h	212;"	d
 HAVE_SYS_SYSCTL_H	sparc64-unknown-freebsd5.1/config.h	206;"	d
+HAVE_SYS_TIME_H	config.h	215;"	d
 HAVE_SYS_TIME_H	sparc64-unknown-freebsd5.1/config.h	209;"	d
+HAVE_SYS_TYPES_H	config.h	218;"	d
 HAVE_SYS_TYPES_H	sparc64-unknown-freebsd5.1/config.h	212;"	d
+HAVE_SYS_UIO_H	config.h	221;"	d
 HAVE_SYS_UIO_H	sparc64-unknown-freebsd5.1/config.h	215;"	d
+HAVE_SYS_UN_H	config.h	224;"	d
 HAVE_SYS_UN_H	sparc64-unknown-freebsd5.1/config.h	218;"	d
+HAVE_SYS_WAIT_H	config.h	227;"	d
 HAVE_SYS_WAIT_H	sparc64-unknown-freebsd5.1/config.h	221;"	d
+HAVE_TIMESPEC_STRUCT	config.h	230;"	d
 HAVE_TIMESPEC_STRUCT	sparc64-unknown-freebsd5.1/config.h	224;"	d
+HAVE_TIME_H	config.h	233;"	d
 HAVE_TIME_H	sparc64-unknown-freebsd5.1/config.h	227;"	d
+HAVE_UNISTD_H	config.h	236;"	d
 HAVE_UNISTD_H	sparc64-unknown-freebsd5.1/config.h	230;"	d
+HAVE_VSNPRINTF	config.h	239;"	d
 HAVE_VSNPRINTF	sparc64-unknown-freebsd5.1/config.h	233;"	d
 HENTBUFSIZ	libfree/getaddrinfo.c	115;"	d	file:
 HENTBUFSIZ	libfree/getnameinfo.c	42;"	d	file:
@@ -262,14 +323,18 @@ INFTIM_UNPH	lib/unp.h	187;"	d
 INFTIM_UNPH	sctp/unp.h	161;"	d
 INT16SZ	libfree/inet_ntop.c	33;"	d	file:
 INT16SZ	libfree/inet_pton.c	33;"	d	file:
+IPV4	config.h	248;"	d
 IPV4	libfree/getaddrinfo.c	53;"	d	file:
 IPV4	libfree/getnameinfo.c	30;"	d	file:
 IPV4	sparc64-unknown-freebsd5.1/config.h	242;"	d
+IPV6	config.h	251;"	d
 IPV6	libfree/getaddrinfo.c	58;"	d	file:
 IPV6	libfree/getaddrinfo.c	60;"	d	file:
 IPV6	libfree/getnameinfo.c	33;"	d	file:
 IPV6	sparc64-unknown-freebsd5.1/config.h	245;"	d
+IPv4	config.h	254;"	d
 IPv4	sparc64-unknown-freebsd5.1/config.h	248;"	d
+IPv6	config.h	257;"	d
 IPv6	sparc64-unknown-freebsd5.1/config.h	251;"	d
 If_indextoname	lib/if_indextoname.c	/^If_indextoname(unsigned int index, char *name)$/;"	f
 If_indextoname	libroute/if_indextoname.c	/^If_indextoname(unsigned int idx, char *name)$/;"	f
@@ -324,6 +389,7 @@ MAXSOCKADDR	key/unp.h	178;"	d
 MAXSOCKADDR	sctp/unp.h	171;"	d
 MAXWAIT	ping/bsdping.c	382;"	d	file:
 MAX_DUP_CHK	ping/bsdping.c	115;"	d	file:
+MCAST	config.h	260;"	d
 MCAST	sparc64-unknown-freebsd5.1/config.h	254;"	d
 MODE_BROADCAST	ssntp/ntp.h	32;"	d
 MODE_CLIENT	ssntp/ntp.h	30;"	d
@@ -383,6 +449,11 @@ OBJS	traceroute/Makefile	/^OBJS = main.o icmpcode_v4.o icmpcode_v6.o recv_v4.o r
 OBJS	udpcksum/Makefile	/^OBJS = main.o cleanup.o pcap.o udpcksum.o senddnsquery-raw.o udpread.o udpwrite.o$/;"	m
 OBJSNET	udpcksum/Makefile	/^OBJSNET = main.o cleanup.o pcap.o udpcksum.o senddnsquery-libnet.o udpread.o$/;"	m
 Open	lib/wrapunix.c	/^Open(const char *pathname, int oflag, mode_t mode)$/;"	f
+PACKAGE_BUGREPORT	config.h	263;"	d
+PACKAGE_NAME	config.h	266;"	d
+PACKAGE_STRING	config.h	269;"	d
+PACKAGE_TARNAME	config.h	272;"	d
+PACKAGE_VERSION	config.h	275;"	d
 PF_LOCAL	key/unp.h	157;"	d
 PF_LOCAL	lib/unp.h	176;"	d
 PF_LOCAL	libfree/getaddrinfo.c	74;"	d	file:
@@ -471,9 +542,9 @@ Recvfrom	lib/wrapsock.c	/^Recvfrom(int fd, void *ptr, size_t nbytes, int flags,$
 Recvfrom_flags	advio/old/recvfromflags.c	/^Recvfrom_flags(int fd, void *ptr, size_t nbytes, int *flagsp,$/;"	f
 Recvfrom_flags	advio/recvfromflags.c	/^Recvfrom_flags(int fd, void *ptr, size_t nbytes, int *flagsp,$/;"	f
 Recvmsg	lib/wrapsock.c	/^Recvmsg(int fd, struct msghdr *msg, int flags)$/;"	f
-Rline	server/readline_r.h	/^} Rline;$/;"	t	typeref:struct:__anon5
-Rline	test/readline.h	/^} Rline;$/;"	t	typeref:struct:__anon10
-Rline	threads/readline.c	/^} Rline;$/;"	t	typeref:struct:__anon8	file:
+Rline	server/readline_r.h	/^} Rline;$/;"	t	typeref:struct:__anon7
+Rline	test/readline.h	/^} Rline;$/;"	t	typeref:struct:__anon9
+Rline	threads/readline.c	/^} Rline;$/;"	t	typeref:struct:__anon10	file:
 SA	key/unp.h	195;"	d
 SA	lib/unp.h	212;"	d
 SA	sctp/unp.h	195;"	d
@@ -524,6 +595,7 @@ SHUT_WR	key/unp.h	84;"	d
 SHUT_WR	lib/unp.h	103;"	d
 SHUT_WR	sctp/unp.h	77;"	d
 SIG_ERR	sock/ourhdr.h	36;"	d
+STDC_HEADERS	config.h	281;"	d
 STDC_HEADERS	sparc64-unknown-freebsd5.1/config.h	260;"	d
 SUN_LEN	key/unp.h	147;"	d
 SUN_LEN	lib/unp.h	166;"	d
@@ -566,6 +638,7 @@ TELL_CHILD	sock/tellwait.c	/^TELL_CHILD(pid_t pid)$/;"	f
 TELL_PARENT	sock/tellwait.c	/^TELL_PARENT(pid_t pid)$/;"	f
 TELL_WAIT	sock/tellwait.c	/^TELL_WAIT()$/;"	f
 TEST1_OBJS	test/Makefile	/^TEST1_OBJS = test1.o funcs.o$/;"	m
+TIME_WITH_SYS_TIME	config.h	284;"	d
 TIME_WITH_SYS_TIME	sparc64-unknown-freebsd5.1/config.h	263;"	d
 TST	ping/bsdping.c	97;"	d	file:
 TTL_OUT	udpcksum/udpcksum.h	13;"	d
@@ -598,17 +671,19 @@ T_UDP_CHECKSUM	streams/unpxti.h	48;"	d
 TcpSockByAddr	test/funcs.c	/^TcpSockByAddr(char *ipaddr, int port \/* host byte order *\/ )$/;"	f
 Tcp_connect	lib/tcp_connect.c	/^Tcp_connect(const char *host, const char *serv)$/;"	f
 Tcp_listen	lib/tcp_listen.c	/^Tcp_listen(const char *host, const char *serv, socklen_t *addrlenp)$/;"	f
-Thread	server/pthread07.h	/^} Thread;$/;"	t	typeref:struct:__anon1
-Thread	server/pthread08.h	/^} Thread;$/;"	t	typeref:struct:__anon4
-Thread	server/pthread09.h	/^} Thread;$/;"	t	typeref:struct:__anon3
+Thread	server/pthread07.h	/^} Thread;$/;"	t	typeref:struct:__anon4
+Thread	server/pthread08.h	/^} Thread;$/;"	t	typeref:struct:__anon5
+Thread	server/pthread09.h	/^} Thread;$/;"	t	typeref:struct:__anon6
 UIO_MAXIOV	sock/write.c	14;"	d	file:
 UNIXDG_PATH	key/unp.h	185;"	d
 UNIXDG_PATH	lib/unp.h	203;"	d
 UNIXDG_PATH	sctp/unp.h	185;"	d
+UNIXDOMAIN	config.h	287;"	d
 UNIXDOMAIN	sparc64-unknown-freebsd5.1/config.h	266;"	d
 UNIXSTR_PATH	key/unp.h	184;"	d
 UNIXSTR_PATH	lib/unp.h	202;"	d
 UNIXSTR_PATH	sctp/unp.h	184;"	d
+UNIXdomain	config.h	290;"	d
 UNIXdomain	sparc64-unknown-freebsd5.1/config.h	269;"	d
 UdpConnSockByAddr	test/funcs.c	/^UdpConnSockByAddr(char *ipaddr, int port \/* host byte order *\/ )$/;"	f
 UdpSockByAddr	test/funcs.c	/^UdpSockByAddr(char *ipaddr, int port \/* host byte order *\/ )$/;"	f
@@ -722,7 +797,7 @@ cbreak	sock/main.c	/^int		cbreak;				\/* set terminal to cbreak mode *\/$/;"	v
 cfd	debug/backlog.c	13;"	d	file:
 cfd	debug/qlen.c	13;"	d	file:
 check_notification	sctp/sctp_check_notify.c	/^check_notification(int sock_fd,char *recvline,int rd_len)$/;"	f
-child_count	server/child.h	/^  long		child_count;	\/* # connections handled *\/$/;"	m	struct:__anon2
+child_count	server/child.h	/^  long		child_count;	\/* # connections handled *\/$/;"	m	struct:__anon3
 child_main	server/child02.c	/^child_main(int i, int listenfd, int addrlen)$/;"	f
 child_main	server/child02l.c	/^child_main(int i, int listenfd, int addrlen)$/;"	f
 child_main	server/child02m.c	/^child_main(int i, int listenfd, int addrlen)$/;"	f
@@ -737,9 +812,9 @@ child_make	server/child03.c	/^child_make(int i, int listenfd, int addrlen)$/;"	f
 child_make	server/child03m.c	/^child_make(int i, int listenfd, int addrlen)$/;"	f
 child_make	server/child04.c	/^child_make(int i, int listenfd, int addrlen)$/;"	f
 child_make	server/child05.c	/^child_make(int i, int listenfd, int addrlen)$/;"	f
-child_pid	server/child.h	/^  pid_t		child_pid;		\/* process ID *\/$/;"	m	struct:__anon2
-child_pipefd	server/child.h	/^  int		child_pipefd;	\/* parent's stream pipe to\/from child *\/$/;"	m	struct:__anon2
-child_status	server/child.h	/^  int		child_status;	\/* 0 = ready *\/$/;"	m	struct:__anon2
+child_pid	server/child.h	/^  pid_t		child_pid;		\/* process ID *\/$/;"	m	struct:__anon3
+child_pipefd	server/child.h	/^  int		child_pipefd;	\/* parent's stream pipe to\/from child *\/$/;"	m	struct:__anon3
+child_status	server/child.h	/^  int		child_status;	\/* 0 = ready *\/$/;"	m	struct:__anon3
 chunkwrite	sock/main.c	/^int		chunkwrite;			\/* write in small chunks; not all-at-once *\/$/;"	v
 cleanup	udpcksum/cleanup.c	/^cleanup(int signo)$/;"	f
 cliaddr	icmpd/icmpd.h	/^struct sockaddr_un	cliaddr;$/;"	v	typeref:struct:sockaddr_un
@@ -780,10 +855,10 @@ cptr	server/serv03m.c	/^long			*cptr, *meter(int);	\/* for counting #clients\/ch
 crlf	sock/main.c	/^int		crlf;				\/* convert newline to CR\/LF & vice versa *\/$/;"	v
 crlf_add	sock/crlf.c	/^crlf_add(char *dst, int dstsize, const char *src, int lenin)$/;"	f
 crlf_strip	sock/crlf.c	/^crlf_strip(char *dst, int dstsize, const char *src, int lenin)$/;"	f
-ctl6_flow	ping/old/ip6.h	/^	    u_int32_t ctl6_flow;	\/* 24 bits of flow-ID *\/$/;"	m	struct:ip6hdr::__anon7::ip6hdrctl
-ctl6_hlim	ping/old/ip6.h	/^	    u_int8_t  ctl6_hlim;        \/* hop limit *\/$/;"	m	struct:ip6hdr::__anon7::ip6hdrctl
-ctl6_nxt	ping/old/ip6.h	/^	    u_int8_t  ctl6_nxt;         \/* next header *\/$/;"	m	struct:ip6hdr::__anon7::ip6hdrctl
-ctl6_plen	ping/old/ip6.h	/^	    u_int16_t ctl6_plen;        \/* payload length *\/$/;"	m	struct:ip6hdr::__anon7::ip6hdrctl
+ctl6_flow	ping/old/ip6.h	/^	    u_int32_t ctl6_flow;	\/* 24 bits of flow-ID *\/$/;"	m	struct:ip6hdr::__anon2::ip6hdrctl
+ctl6_hlim	ping/old/ip6.h	/^	    u_int8_t  ctl6_hlim;        \/* hop limit *\/$/;"	m	struct:ip6hdr::__anon2::ip6hdrctl
+ctl6_nxt	ping/old/ip6.h	/^	    u_int8_t  ctl6_nxt;         \/* next header *\/$/;"	m	struct:ip6hdr::__anon2::ip6hdrctl
+ctl6_plen	ping/old/ip6.h	/^	    u_int16_t ctl6_plen;        \/* payload length *\/$/;"	m	struct:ip6hdr::__anon2::ip6hdrctl
 daemon_inetd	lib/daemon_inetd.c	/^daemon_inetd(const char *pname, int facility)$/;"	f
 daemon_init	lib/daemon_init.c	/^daemon_init(const char *pname, int facility)$/;"	f
 daemon_proc	lib/error.c	/^int		daemon_proc;		\/* set nonzero by daemon_init() *\/$/;"	v
@@ -821,7 +896,7 @@ dg_cli	udpcliserv/dgcliconnect.c	/^dg_cli(FILE *fp, int sockfd, const SA *pserva
 dg_cli	udpcliserv/dgcliinetaddr.c	/^dg_cli(FILE *fp, int sockfd, const SA *pservaddr, socklen_t servlen)$/;"	f
 dg_cli	udpcliserv/dgcliloop1.c	/^dg_cli(FILE *fp, int sockfd, const SA *pservaddr, socklen_t servlen)$/;"	f
 dg_cli	udpcliserv/dgcliloop3.c	/^dg_cli(FILE *fp, int sockfd, const SA *pservaddr, socklen_t servlen)$/;"	f
-dg_data	sigio/dgecho01.c	/^  void		*dg_data;		\/* ptr to actual datagram *\/$/;"	m	struct:__anon9	file:
+dg_data	sigio/dgecho01.c	/^  void		*dg_data;		\/* ptr to actual datagram *\/$/;"	m	struct:__anon8	file:
 dg_echo	advio/dgechoaddr.c	/^dg_echo(int sockfd, SA *pcliaddr, socklen_t clilen)$/;"	f
 dg_echo	advio/old/dgechoaddr.c	/^dg_echo(int sockfd, SA *pcliaddr, socklen_t clilen)$/;"	f
 dg_echo	ipopts/dgechoprintroute.c	/^dg_echo(int sockfd, SA *pcliaddr, socklen_t clilen)$/;"	f
@@ -830,9 +905,9 @@ dg_echo	rtt/dg_echo.c	/^dg_echo(int sockfd, SA *pcliaddr, socklen_t clilen)$/;"	
 dg_echo	sigio/dgecho01.c	/^dg_echo(int sockfd_arg, SA *pcliaddr, socklen_t clilen_arg)$/;"	f
 dg_echo	udpcliserv/dgecholoop1.c	/^dg_echo(int sockfd, SA *pcliaddr, socklen_t clilen)$/;"	f
 dg_echo	udpcliserv/dgecholoop2.c	/^dg_echo(int sockfd, SA *pcliaddr, socklen_t clilen)$/;"	f
-dg_len	sigio/dgecho01.c	/^  size_t	dg_len;			\/* length of datagram *\/$/;"	m	struct:__anon9	file:
-dg_sa	sigio/dgecho01.c	/^  struct sockaddr  *dg_sa;	\/* ptr to sockaddr{} w\/client's address *\/$/;"	m	struct:__anon9	typeref:struct:__anon9::sockaddr	file:
-dg_salen	sigio/dgecho01.c	/^  socklen_t	dg_salen;		\/* length of sockaddr{} *\/$/;"	m	struct:__anon9	file:
+dg_len	sigio/dgecho01.c	/^  size_t	dg_len;			\/* length of datagram *\/$/;"	m	struct:__anon8	file:
+dg_sa	sigio/dgecho01.c	/^  struct sockaddr  *dg_sa;	\/* ptr to sockaddr{} w\/client's address *\/$/;"	m	struct:__anon8	typeref:struct:__anon8::sockaddr	file:
+dg_salen	sigio/dgecho01.c	/^  socklen_t	dg_salen;		\/* length of sockaddr{} *\/$/;"	m	struct:__anon8	file:
 dg_send_recv	rtt/dg_send_recv.c	/^dg_send_recv(int fd, const void *outbuff, size_t outbytes,$/;"	f
 dispersion	ssntp/ntp.h	/^  struct s_fixedpt	dispersion;$/;"	m	struct:ntpdata	typeref:struct:ntpdata::s_fixedpt
 distance	ssntp/ntp.h	/^  struct s_fixedpt	distance;$/;"	m	struct:ntpdata	typeref:struct:ntpdata::s_fixedpt
@@ -995,7 +1070,7 @@ icmp6_code	ping/old/icmp6.h	/^    u_int8_t	icmp6_code;		\/* Code field *\/$/;"	m
 icmp6_data16	ping/old/icmp6.h	13;"	d
 icmp6_data32	ping/old/icmp6.h	12;"	d
 icmp6_data8	ping/old/icmp6.h	14;"	d
-icmp6_dataun	ping/old/icmp6.h	/^    } icmp6_dataun;$/;"	m	struct:icmp6hdr	typeref:union:icmp6hdr::__anon6
+icmp6_dataun	ping/old/icmp6.h	/^    } icmp6_dataun;$/;"	m	struct:icmp6hdr	typeref:union:icmp6hdr::__anon1
 icmp6_id	ping/old/icmp6.h	17;"	d
 icmp6_maxdelay	ping/old/icmp6.h	19;"	d
 icmp6_mtu	ping/old/icmp6.h	16;"	d
@@ -1072,7 +1147,7 @@ init_v6	ping/init_v6.c	/^init_v6()$/;"	f
 int_part	ssntp/ntp.h	/^  uint16_t	int_part;$/;"	m	struct:s_fixedpt
 int_part	ssntp/ntp.h	/^  uint32_t	int_part;$/;"	m	struct:l_fixedpt
 interval	ping/bsdping.c	/^int interval = 1;		\/* interval between packets *\/$/;"	v
-ip6_ctlun	ping/old/ip6.h	/^    } ip6_ctlun;$/;"	m	struct:ip6hdr	typeref:union:ip6hdr::__anon7
+ip6_ctlun	ping/old/ip6.h	/^    } ip6_ctlun;$/;"	m	struct:ip6hdr	typeref:union:ip6hdr::__anon2
 ip6_dst	ping/old/ip6.h	/^    struct in6_addr ip6_dst;		\/* destination address *\/$/;"	m	struct:ip6hdr	typeref:struct:ip6hdr::in6_addr
 ip6_flow	ping/old/ip6.h	16;"	d
 ip6_hlim	ping/old/ip6.h	19;"	d
@@ -1082,7 +1157,7 @@ ip6_plen	ping/old/ip6.h	17;"	d
 ip6_src	ping/old/ip6.h	/^    struct in6_addr ip6_src;		\/* source address *\/$/;"	m	struct:ip6hdr	typeref:struct:ip6hdr::in6_addr
 ip6_vfc	ping/old/ip6.h	15;"	d
 ip6hdr	ping/old/ip6.h	/^struct ip6hdr {$/;"	s
-ip6hdrctl	ping/old/ip6.h	/^	struct ip6hdrctl {$/;"	s	union:ip6hdr::__anon7
+ip6hdrctl	ping/old/ip6.h	/^	struct ip6hdrctl {$/;"	s	union:ip6hdr::__anon2
 ipi_addr	key/unp.h	/^  struct in_addr	ipi_addr;	\/* dst IPv4 address *\/$/;"	m	struct:in_pktinfo	typeref:struct:in_pktinfo::in_addr
 ipi_addr	lib/unp.h	/^  struct in_addr	ipi_addr;	\/* dst IPv4 address *\/$/;"	m	struct:unp_in_pktinfo	typeref:struct:unp_in_pktinfo::in_addr
 ipi_addr	sctp/unp.h	/^  struct in_addr	ipi_addr;	\/* dst IPv4 address *\/$/;"	m	struct:in_pktinfo	typeref:struct:in_pktinfo::in_addr
@@ -1566,14 +1641,14 @@ read_buf	lib/readline.c	/^static char	read_buf[MAXLINE];$/;"	v	file:
 read_cnt	lib/readline.c	/^static int	read_cnt;$/;"	v	file:
 read_cred	unixdomain/readcred.c	/^read_cred(int fd, void *ptr, size_t nbytes, struct cmsgcred *cmsgcredptr)$/;"	f
 read_fd	lib/read_fd.c	/^read_fd(int fd, void *ptr, size_t nbytes, int *recvfd)$/;"	f
-read_fd	server/readline_r.h	/^  int		read_fd;		\/* caller's descriptor to read from *\/$/;"	m	struct:__anon5
-read_fd	test/readline.h	/^  int		read_fd;		\/* caller's descriptor to read from *\/$/;"	m	struct:__anon10
+read_fd	server/readline_r.h	/^  int		read_fd;		\/* caller's descriptor to read from *\/$/;"	m	struct:__anon7
+read_fd	test/readline.h	/^  int		read_fd;		\/* caller's descriptor to read from *\/$/;"	m	struct:__anon9
 read_lock	sock/ourhdr.h	84;"	d
-read_maxlen	server/readline_r.h	/^  size_t	read_maxlen;	\/* max #bytes to read *\/$/;"	m	struct:__anon5
-read_maxlen	test/readline.h	/^  size_t	read_maxlen;	\/* max #bytes to read *\/$/;"	m	struct:__anon10
+read_maxlen	server/readline_r.h	/^  size_t	read_maxlen;	\/* max #bytes to read *\/$/;"	m	struct:__anon7
+read_maxlen	test/readline.h	/^  size_t	read_maxlen;	\/* max #bytes to read *\/$/;"	m	struct:__anon9
 read_ptr	lib/readline.c	/^static char	*read_ptr;$/;"	v	file:
-read_ptr	server/readline_r.h	/^  char		*read_ptr;		\/* caller's buffer to read into *\/$/;"	m	struct:__anon5
-read_ptr	test/readline.h	/^  char		*read_ptr;		\/* caller's buffer to read into *\/$/;"	m	struct:__anon10
+read_ptr	server/readline_r.h	/^  char		*read_ptr;		\/* caller's buffer to read into *\/$/;"	m	struct:__anon7
+read_ptr	test/readline.h	/^  char		*read_ptr;		\/* caller's buffer to read into *\/$/;"	m	struct:__anon9
 readable_conn	icmpd/readable_conn.c	/^readable_conn(int i)$/;"	f
 readable_listen	icmpd/readable_listen.c	/^readable_listen(void)$/;"	f
 readable_timeo	lib/readable_timeo.c	/^readable_timeo(int fd, int sec)$/;"	f
@@ -1634,15 +1709,15 @@ res_init	configure	/^res_init ();$/;"	f
 result	tcpcliserv/sum.h	/^struct result {$/;"	s
 reuseaddr	sock/main.c	/^int		reuseaddr;			\/* SO_REUSEADDR *\/$/;"	v
 reuseport	sock/main.c	/^int		reuseport;			\/* SO_REUSEPORT *\/$/;"	v
-rl_buf	server/readline_r.h	/^  char		rl_buf[MAXLINE];$/;"	m	struct:__anon5
-rl_buf	test/readline.h	/^  char		rl_buf[MAXLINE];$/;"	m	struct:__anon10
-rl_buf	threads/readline.c	/^  char	 rl_buf[MAXLINE];$/;"	m	struct:__anon8	file:
-rl_bufptr	server/readline_r.h	/^  char		*rl_bufptr;		\/* initialize to rl_buf *\/$/;"	m	struct:__anon5
-rl_bufptr	test/readline.h	/^  char		*rl_bufptr;		\/* initialize to rl_buf *\/$/;"	m	struct:__anon10
-rl_bufptr	threads/readline.c	/^  char	*rl_bufptr;			\/* initialize to rl_buf *\/$/;"	m	struct:__anon8	file:
-rl_cnt	server/readline_r.h	/^  int		rl_cnt;			\/* initialize to 0 *\/$/;"	m	struct:__anon5
-rl_cnt	test/readline.h	/^  int		rl_cnt;			\/* initialize to 0 *\/$/;"	m	struct:__anon10
-rl_cnt	threads/readline.c	/^  int	 rl_cnt;			\/* initialize to 0 *\/$/;"	m	struct:__anon8	file:
+rl_buf	server/readline_r.h	/^  char		rl_buf[MAXLINE];$/;"	m	struct:__anon7
+rl_buf	test/readline.h	/^  char		rl_buf[MAXLINE];$/;"	m	struct:__anon9
+rl_buf	threads/readline.c	/^  char	 rl_buf[MAXLINE];$/;"	m	struct:__anon10	file:
+rl_bufptr	server/readline_r.h	/^  char		*rl_bufptr;		\/* initialize to rl_buf *\/$/;"	m	struct:__anon7
+rl_bufptr	test/readline.h	/^  char		*rl_bufptr;		\/* initialize to rl_buf *\/$/;"	m	struct:__anon9
+rl_bufptr	threads/readline.c	/^  char	*rl_bufptr;			\/* initialize to rl_buf *\/$/;"	m	struct:__anon10	file:
+rl_cnt	server/readline_r.h	/^  int		rl_cnt;			\/* initialize to 0 *\/$/;"	m	struct:__anon7
+rl_cnt	test/readline.h	/^  int		rl_cnt;			\/* initialize to 0 *\/$/;"	m	struct:__anon9
+rl_cnt	threads/readline.c	/^  int	 rl_cnt;			\/* initialize to 0 *\/$/;"	m	struct:__anon10	file:
 rl_key	threads/readline.c	/^static pthread_key_t	rl_key;$/;"	v	file:
 rl_once	threads/readline.c	/^static pthread_once_t	rl_once = PTHREAD_ONCE_INIT;$/;"	v	file:
 rset	icmpd/icmpd.h	/^fd_set			rset, allset;$/;"	v
@@ -1849,23 +1924,25 @@ sum	tcpcliserv/sum.h	/^  long	sum;$/;"	m	struct:result
 summary	ping/bsdping.c	/^summary()$/;"	f
 supported_print	key/printsadbmsg.c	/^supported_print(struct sadb_ext *ext)$/;"	f
 t_open	configure	/^t_open ();$/;"	f
+t_scalar_t	config.h	314;"	d
 t_scalar_t	sparc64-unknown-freebsd5.1/config.h	293;"	d
+t_uscalar_t	config.h	317;"	d
 t_uscalar_t	sparc64-unknown-freebsd5.1/config.h	296;"	d
 tcp_connect	lib/tcp_connect.c	/^tcp_connect(const char *host, const char *serv)$/;"	f
 tcp_listen	lib/tcp_listen.c	/^tcp_listen(const char *host, const char *serv, socklen_t *addrlenp)$/;"	f
 test_udp	udpcksum/udpcksum.c	/^test_udp(void)$/;"	f
-thread_count	server/pthread07.h	/^  long			thread_count;	\/* # connections handled *\/$/;"	m	struct:__anon1
-thread_count	server/pthread08.h	/^  long			thread_count;	\/* # connections handled *\/$/;"	m	struct:__anon4
-thread_count	server/pthread09.h	/^  long			thread_count;	\/* #connections handled *\/$/;"	m	struct:__anon3
+thread_count	server/pthread07.h	/^  long			thread_count;	\/* # connections handled *\/$/;"	m	struct:__anon4
+thread_count	server/pthread08.h	/^  long			thread_count;	\/* # connections handled *\/$/;"	m	struct:__anon5
+thread_count	server/pthread09.h	/^  long			thread_count;	\/* #connections handled *\/$/;"	m	struct:__anon6
 thread_main	server/pthread07.c	/^thread_main(void *arg)$/;"	f
 thread_main	server/pthread08.c	/^thread_main(void *arg)$/;"	f
 thread_main	server/pthread09.c	/^thread_main(void *arg)$/;"	f
 thread_make	server/pthread07.c	/^thread_make(int i)$/;"	f
 thread_make	server/pthread08.c	/^thread_make(int i)$/;"	f
 thread_make	server/pthread09.c	/^thread_make(int i)$/;"	f
-thread_tid	server/pthread07.h	/^  pthread_t		thread_tid;		\/* thread ID *\/$/;"	m	struct:__anon1
-thread_tid	server/pthread08.h	/^  pthread_t		thread_tid;		\/* thread ID *\/$/;"	m	struct:__anon4
-thread_tid	server/pthread09.h	/^  pthread_t		thread_tid;		\/* thread ID *\/$/;"	m	struct:__anon3
+thread_tid	server/pthread07.h	/^  pthread_t		thread_tid;		\/* thread ID *\/$/;"	m	struct:__anon4
+thread_tid	server/pthread08.h	/^  pthread_t		thread_tid;		\/* thread ID *\/$/;"	m	struct:__anon5
+thread_tid	server/pthread09.h	/^  pthread_t		thread_tid;		\/* thread ID *\/$/;"	m	struct:__anon6
 timespec	key/unp.h	/^struct timespec {$/;"	s
 timespec	lib/unp.h	/^struct timespec {$/;"	s
 timespec	sctp/unp.h	/^struct timespec {$/;"	s
@@ -1907,12 +1984,12 @@ udp_read	udpcksum/udpread.c	/^udp_read(void)$/;"	f
 udp_server	lib/udp_server.c	/^udp_server(const char *host, const char *serv, socklen_t *addrlenp)$/;"	f
 udp_server_reuseaddr	names/udp_server_reuseaddr.c	/^udp_server_reuseaddr(const char *host, const char *serv, socklen_t *addrlenp)$/;"	f
 udp_write	udpcksum/udpwrite.c	/^udp_write(char *buf, int userlen)$/;"	f
-un_ctl6	ping/old/ip6.h	/^	} un_ctl6;$/;"	m	union:ip6hdr::__anon7	typeref:struct:ip6hdr::__anon7::ip6hdrctl
-un_data16	ping/old/icmp6.h	/^	u_int16_t	un_data16[2];	\/* Type-specific field *\/$/;"	m	union:icmp6hdr::__anon6
-un_data32	ping/old/icmp6.h	/^	u_int32_t	un_data32[1];	\/* Type-specific field *\/$/;"	m	union:icmp6hdr::__anon6
-un_data8	ping/old/icmp6.h	/^	u_int8_t	un_data8[4];	\/* Type-specific field *\/$/;"	m	union:icmp6hdr::__anon6
+un_ctl6	ping/old/ip6.h	/^	} un_ctl6;$/;"	m	union:ip6hdr::__anon2	typeref:struct:ip6hdr::__anon2::ip6hdrctl
+un_data16	ping/old/icmp6.h	/^	u_int16_t	un_data16[2];	\/* Type-specific field *\/$/;"	m	union:icmp6hdr::__anon1
+un_data32	ping/old/icmp6.h	/^	u_int32_t	un_data32[1];	\/* Type-specific field *\/$/;"	m	union:icmp6hdr::__anon1
+un_data8	ping/old/icmp6.h	/^	u_int8_t	un_data8[4];	\/* Type-specific field *\/$/;"	m	union:icmp6hdr::__anon1
 un_lock	sock/ourhdr.h	92;"	d
-un_vfc	ping/old/ip6.h	/^	u_int8_t un_vfc;		\/* 4 bits version, 4 bits reserved *\/$/;"	m	union:ip6hdr::__anon7
+un_vfc	ping/old/ip6.h	/^	u_int8_t un_vfc;		\/* 4 bits version, 4 bits reserved *\/$/;"	m	union:ip6hdr::__anon2
 unlock_it	server/lock_fcntl.c	/^static struct flock	lock_it, unlock_it;$/;"	v	typeref:struct:	file:
 unp_in_pktinfo	lib/unp.h	/^struct unp_in_pktinfo {$/;"	s
 urgwrite	sock/main.c	/^int		urgwrite;			\/* write urgent byte after this write *\/$/;"	v
